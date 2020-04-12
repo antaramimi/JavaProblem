@@ -19,6 +19,4 @@ public class SortaSum {
             return sum;
         }
     }
-
-
 }
