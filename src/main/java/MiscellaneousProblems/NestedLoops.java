@@ -9,4 +9,15 @@ public class NestedLoops {
             }System.out.println("");
         }
     }
+
+    public static class SkipNumbers {
+
+        public static void skipNumbers(int[] nums){
+            for(int i=0;i<nums.length;i=i+2){
+               System.out.print(nums[i]);
+            }
+        }
+
+    }
+
 }
