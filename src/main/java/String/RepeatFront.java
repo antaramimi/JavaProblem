@@ -11,15 +11,24 @@ package String;
  * repeatFront("Ice Cream", 2) → "IcI"
  */
 public class RepeatFront {
-    public String repeatFront(String str, int n) {
-        String newString="";
-        StringBuilder sb=new StringBuilder();
-        String subString=str.substring(0,n);
-        for(int i=0;i<n;i++){
-            newString=str.substring(0,subString.length()-i);
-            sb.append(newString);
-        }return str.toString();
+    public static void main(String[] args) {
+
+        System.out.println(repeatFront("Chocolate", 3));
     }
 
+    public static String repeatFront(String str, int n) {
+        String newString = "";
+        String subString = str.substring(0, n);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            newString = str.substring(0, subString.length() - i);
+            sb.append(newString);
+
+        }
+        return sb.toString();
     }
+
+
+}
+
 

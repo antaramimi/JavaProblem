@@ -44,6 +44,9 @@ public class BasicArray {
         System.out.println();
         System.out.println("This will return duplicate an array");
         duplicateArray(new int[]{2, 88, 88, 45, 1});
+        System.out.println();
+        System.out.println("This will return common element in an array");
+        commonElements(new int[]{2, 88, 88, 45, 1},new int[]{1, 88, 77, 5, 41});
 
     }
 
@@ -153,6 +156,15 @@ public class BasicArray {
                 System.out.println(arr[i]);
         }
     }
+
+    public static void commonElements(int[] arr,int[] arr2) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] == arr2[i])
+                System.out.println(arr[i]);
+        }
+    }
+
+
 
 
 }

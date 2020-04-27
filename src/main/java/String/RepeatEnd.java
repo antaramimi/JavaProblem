@@ -10,6 +10,7 @@ package String;
  * repeatEnd("Hello", 1) → "o"
  */
 public class RepeatEnd {
+
     public String repeatEnd(String str, int n) {
         String subString = str.substring(str.length() - n);
         StringBuilder sb = new StringBuilder();
