@@ -6,7 +6,7 @@ import java.util.Map;
 public class HashMapProblem {
     public static void main(String[] args) {
 
-        HashMap<Integer, String> hm = new HashMap<Integer, String>();
+        HashMap<Integer, String> hm = new HashMap<>();
         hm.put(1, "Ram");
         hm.put(2, "Antara");
         hm.put(3, "Pramisha");
