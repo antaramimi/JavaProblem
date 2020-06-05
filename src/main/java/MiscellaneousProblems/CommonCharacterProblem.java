@@ -28,6 +28,7 @@ public class CommonCharacterProblem {
         return listOfCharacter.toString();
     }
 
+
     public static String notCommonCharacter(String a, String b) {
         List<Character> listOfCharacter = new ArrayList<>();
         Set<Character> setOfCharacterA = new TreeSet<>();
