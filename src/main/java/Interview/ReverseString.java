@@ -3,7 +3,7 @@ package Interview;
 public class ReverseString {
 
     public static void main(String[] args) {
-        String name = "Antara";
+        String name = "Antara id hhj hjjh hjhkoobuhuh";
         String rev = "";
 
         for (int i = name.length() - 1; i >= 0; i--) {
