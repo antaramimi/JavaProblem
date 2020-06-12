@@ -14,6 +14,8 @@ public class IsPalindrome {
 
 
     public static boolean isPalindrome(String str) {
+
+
         char[] orginalString=str.toCharArray();
 
         for(int i=0,j=str.length()-1;i<j;i++,j--){
