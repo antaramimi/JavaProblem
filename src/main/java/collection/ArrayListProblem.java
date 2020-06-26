@@ -47,16 +47,12 @@ public class ArrayListProblem {
 
         Iterator<Employee> emps = emp.iterator();
         while (emps.hasNext()) {
-             /*Employee employee=emps.next();
+             Employee employee=emps.next();
             System.out.println(employee.age);
             System.out.println(employee.name);
             System.out.println(employee.deparment);
-            */
+
         }
-
-
-
-
 
     }
 }
