@@ -1,7 +1,7 @@
 package miscellaneousproblems;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 public class PrintString {
@@ -15,8 +15,7 @@ public class PrintString {
 
     public static List<List<String>> groupingTheCharacter(List<String> arr) {
 
-        List<List<String>> result
-                = new ArrayList<>();
+        List<List<String>> result = new ArrayList<>();
         List<String> aString = new ArrayList<>();
         List<String> bString = new ArrayList<>();
         List<String> cString = new ArrayList<>();
@@ -29,11 +28,40 @@ public class PrintString {
             } else if (str.startsWith("c")) {
                 cString.add(str);
             }
-            result.add(aString);
-            result.add(bString);
-            result.add(cString);
         }
+
+        result.add(aString);
+        result.add(bString);
+        result.add(cString);
+
         return result;
     }
 
+
+    public static String[][] groupingTheCharacter2(String[] arr) {
+        String[][] result = new String[arr.length][];
+        String[] aString = new String[arr.length];
+        String[] bString = new String[arr.length];
+        String[] cString = new String[arr.length];
+
+        for (int i=0;i<arr.length;i++) {
+            if (arr[i].startsWith("a")) {
+                aString[i]=arr[i];
+            } else if (arr[i].startsWith("b")) {
+                bString[i]=arr[i];
+            } else if (arr[i].startsWith("c")) {
+                cString[i]=arr[i];
+            }
+        }
+
+        result[0]=aString;
+        result[1]=bString;
+        result[2]=cString;
+
+        return result;
+
+    }
+
 }
+
+
