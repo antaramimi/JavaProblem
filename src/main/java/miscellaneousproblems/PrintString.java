@@ -11,6 +11,7 @@ public class PrintString {
         test.add("antara is good girl");
         test.add("chocolate is tasty");
         System.out.println(groupingTheCharacter(test));
+        System.out.println(Arrays.deepToString(groupingTheCharacter2(new String[]{"antata is book", "antara", "book"})));
     }
 
     public static List<List<String>> groupingTheCharacter(List<String> arr) {
