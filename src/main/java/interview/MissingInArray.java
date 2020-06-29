@@ -6,8 +6,9 @@ package interview;
 
 public class MissingInArray {
     public static void main(String[] args) {
-        System.out.println(missingArray(new int[]{1,2,3,5,6}));
-        System.out.println(missingArray1(new int[]{1,2,3,5,6}));
+        //System.out.println(missingArray(new int[]{1,2,3,5,6}));
+       // System.out.println(missingArray1(new int[]{1,2,3,5,6}));
+
 
     }
     public static int missingArray(int [] arr){

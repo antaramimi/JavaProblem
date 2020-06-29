@@ -20,7 +20,7 @@ public class CapitalLetterAfterDot {
     }
 
     public static String makeCapitalLetterAfterDot1(String str){
-        //char[] newArray=new char[str.length()];
+
         char[] newCharacter = str.toCharArray();
         for(int i=0;i<newCharacter.length;i++){
             if(newCharacter[i]=='.'){
