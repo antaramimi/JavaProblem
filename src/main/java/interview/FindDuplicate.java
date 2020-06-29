@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class findDuplicate {
+public class FindDuplicate {
     public static void main(String[] args) {
         List<String> lb=new ArrayList<>();
         for(int i=0;i<10;i++){

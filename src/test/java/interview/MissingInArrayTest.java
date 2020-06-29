@@ -1,3 +1,5 @@
+package interview;
+
 import interview.MissingInArray;
 import org.junit.Assert;
 import org.junit.Test;

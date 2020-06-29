@@ -71,7 +71,7 @@ public class CommonCharacterProblem {
 
     public static void repeatedCharacterUsingHashMap(String a) {
         Map<Character, Integer> repeatedCharacter = new HashMap<>();
-        char[] charStringofA=a.toCharArray();
+        //char[] charStringofA=a.toCharArray();
         for(char ch:a.toCharArray()){
             if(repeatedCharacter.containsKey(ch)){
                 repeatedCharacter.put(ch,repeatedCharacter.get(ch)+1);

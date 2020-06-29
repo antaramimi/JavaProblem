@@ -1,3 +1,5 @@
+package interview;
+
 import interview.Anagrams;
 import interview.DefangIPaddr;
 import org.junit.Assert;
@@ -27,5 +29,18 @@ public class DefangIPaddrTest {
         String result = DefangIPaddr.defangIPaddr("0.0..0");
         Assert.assertEquals(result,"0[.]0[.][.]0");
     }
+
+    @Test
+    public void defangIPaddrTest4() {
+        String result = DefangIPaddr.defangIPaddr("0.0..");
+        Assert.assertEquals(result,"0[.]0[.][.]");
+    }
+
+    @Test
+    public void defangIPaddrTest5() {
+        String result = DefangIPaddr.defangIPaddr("...");
+        Assert.assertEquals(result,"[.][.][.]");
+    }
+
 
 }

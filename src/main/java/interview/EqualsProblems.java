@@ -15,7 +15,5 @@ public class EqualsProblems {
         System.out.println(ch.equals(chSecond));
         System.out.println(ch==chSecond);
 
-
-
     }
 }
