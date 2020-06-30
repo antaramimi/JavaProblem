@@ -1,10 +1,7 @@
 package interview;
 
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class FindDuplicate {
     public static void main(String[] args) {
@@ -17,6 +14,8 @@ public class FindDuplicate {
         }
         System.out.println(lb);
         System.out.println(duplicateElement(lb));
+        int[] arr ={1,2,3,4,5,1,2,3};
+        System.out.println(Arrays.toString(n2approach(arr)));
     }
 
 
@@ -32,5 +31,15 @@ public class FindDuplicate {
         return resutSetlist;
     }
 
-
+    public static int[] n2approach (int[] arr) {
+        int[] a = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    a[i] = arr[j];
+                }
+            }
+        }
+        return a;
+    }
 }
