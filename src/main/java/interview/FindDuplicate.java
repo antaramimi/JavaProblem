@@ -16,6 +16,7 @@ public class FindDuplicate {
         System.out.println(duplicateElement(lb));
         int[] arr ={1,2,3,4,5,1,2,3};
         System.out.println(Arrays.toString(n2approach(arr)));
+        findElementUsingHashMap(arr);
     }
 
 
@@ -41,5 +42,15 @@ public class FindDuplicate {
             }
         }
         return a;
-    } 
+    }
+
+    public static void findElementUsingHashMap (int[] arr) {
+        Set<Integer> set= new HashSet<>();
+        for(int element : arr){
+            if(!set.add(element)){
+                System.out.print(element);
+            }
+        }
+    }
 }
+

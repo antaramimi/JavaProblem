@@ -10,7 +10,7 @@ import java.util.Map;
 public class NonRepeatedCharacter {
 
     public static void main(String[] args) {
-        System.out.println(nonRepeatedCharacter("abcdefghija"));
+        System.out.println(nonRepeatedCharacter("JavaJ2EE"));
     }
 
     public static Character nonRepeatedCharacter(String characterString) {
@@ -25,8 +25,6 @@ public class NonRepeatedCharacter {
 
             }
         }
-
-       // Set<String> repeatedSet = new HashSet<>();
         for (Map.Entry<Character, Integer> e : map.entrySet()) {
 
             Character wordMax = e.getKey();

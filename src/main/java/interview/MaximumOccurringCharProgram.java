@@ -18,7 +18,6 @@ public class MaximumOccurringCharProgram {
             }
         }
 
-        Set<Integer> entrySet= new HashSet<>();
         int maxCount=0;
         char maxChar=0;
 
