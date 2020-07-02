@@ -13,15 +13,20 @@ package interview;
 public class LatesNexttNumberContainInDigit {
     public static void main(String[] args) {
         System.out.println(getLThanN(123, 2));
-
+        System.out.println(getLThanN(4582, 5));
+        System.out.println(getLThanN(98512, 5));
+        System.out.println(getLThanN(548624, 8));
     }
 
+    //syntax String.valueOf() :can whatever you pass as a parameter is converted to String
+    // and returned..
     public static int getLThanN(int number,int digit){
-        for(int i=number-1;i>0;i--){
+        for(int i=number;i>0;i--){
             if(!String.valueOf(i).contains(String.valueOf(digit))){
                 return i;
             }
         }
         return -1;
     }
+
 }
