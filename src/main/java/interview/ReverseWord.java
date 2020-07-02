@@ -7,24 +7,17 @@ package interview;
 
 public class ReverseWord {
     public static void main(String[] args) {
-        System.out.println(reverseString("i hate coding"));
+        System.out.println(reverseString("hello"));
     }
 
     public static String reverseString(String word) {
 
         String[] newWord = word.split("");
         String result = "";
-
-        for (int i = 0; i < newWord.length; i++) {
-            if (i == newWord.length - 1) {
-                result = newWord[i] + result;
-            } else {
-                result = "" + newWord[i] + result;
-            }
+        for (int i = newWord.length - 1; i >= 0; i--) {
+            result = result + newWord[i];
         }
         return result;
     }
-
-
 }
 

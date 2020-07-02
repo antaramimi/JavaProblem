@@ -15,7 +15,8 @@ public class CommonCharacterProblem {
     }
 
     public static String commonCharacter(String a, String b) {
-        List<Character> listOfCharacter = new ArrayList<>();
+        List<Character> listOfCharacter = new ArrayList<>(); // result
+
         Set<Character> charactersInA = new HashSet<>();
         for (char c : a.toCharArray()) {
             charactersInA.add(c);
